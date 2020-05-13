@@ -1,0 +1,530 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+#closed-captions p {
+	opacity: 0;
+	transition: .05s;
+	position: absolute;
+	margin-left: 274px;
+}
+#closed-captions .on {
+	opacity: 1;
+}
+#closed-captions .off {
+	transition: .2s;
+	opacity: 0;
+}
+iframe, body {
+	display: block;
+	margin: 0 auto;
+	margin-top: 80px;
+	background-color: #141414;
+}
+.voice1 {
+	font-family: "brenner mono";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.voice2 {
+	font-family: "brenner sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.voice3 {
+	font-family: "brenner sans";
+	font-style: italic;
+	font-weight: 500;
+	font-size: 18px;
+	color: orange;
+}
+.voice4 {
+	font-family: "brenner mono";
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.sound0 #video-placeholder {
+	animation: sound0 0.25s ease-in-out 36 alternate;
+}
+@keyframes sound0 {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+.sound1 {
+	animation-duration: 2s;
+	animation-name: alarm-1;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-1 {
+	0% {
+		background-color: #420C09;
+		transform: rotate(1deg);
+	}
+	5% {
+		transform: rotate(-1deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(1deg);
+	}
+	20% {
+		transform: rotate(-1deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+.sound2 {
+	animation-duration: 2s;
+	animation-name: alarm-2;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-2 {
+	0% {
+		background-color: #420C09;
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+.sound3 #video-placeholder {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-3;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-3 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.sound4 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep;
+	animation-timing-function: ease-out;
+}
+@keyframes peep {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+.sound5 #video-placeholder {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-5;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-5 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.sound6 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep-6;
+	animation-timing-function: ease-out;
+}
+@keyframes peep-6 {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+.sound7 #video-placeholder {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-7;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-7 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.sound8 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep-8;
+	animation-timing-function: ease-out;
+}
+@keyframes peep-8 {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+/* **********************************************
+The first paragraph, with extended timing for
+	all siblings. Basically what it does is that
+	it shows the text after a delay, which
+	corresponds with the time that the word is
+	spoken.
+You probably want to change the styling.
+********************************************** */
+.p0.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p1.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p2.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p3.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p4.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p5.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p6.on span:first-of-type {
+	background-color: orange;
+	padding: 4px;
+	color: white;
+}
+.p7.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p8.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p9.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p10.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p11.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p12.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p13.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p14.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p15.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p16.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p17.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p18.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p19.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p20.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p21.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p22.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p23.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p24.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p25.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p26.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p27.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p28.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p29.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p30.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p31.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p32.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p33.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p34.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p35.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p36.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p37.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p38.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p39.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p40.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p41 span {
+	opacity: 0;
+}
+.p41.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p41.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+}
+.p41.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+}
+.p41.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p42 span {
+	opacity: 0;
+}
+.p42.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p42.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+}
+.p42.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+}
+.p42.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p43 span {
+	opacity: 0;
+}
+.p43.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p43.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+}
+.p43.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+}
+.p43.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p47.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
