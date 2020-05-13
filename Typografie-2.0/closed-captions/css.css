@@ -1,0 +1,205 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+#closed-captions p {
+	opacity: 0;
+	transition: .05s;
+	position: absolute;
+	margin-left: 274px;
+}
+#closed-captions .on {
+	opacity: 1;
+}
+#closed-captions .off {
+	transition: .2s;
+	opacity: 0;
+}
+iframe, body {
+	display: block;
+	margin: 0 auto;
+	margin-top: 80px;
+	background-color: #141414;
+}
+.voice1 {
+	font-family: "brenner mono";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.voice2 {
+	font-family: "brenner sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.voice3 {
+	font-family: "brenner sans";
+	font-style: italic;
+	font-weight: 500;
+	font-size: 18px;
+	color: orange;
+}
+.voice4 {
+	font-family: "brenner mono";
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-left: 5px solid #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	bottom: 440px;
+	left: 360px;
+	transform: rotate(45deg);
+}
+.sound0 {
+	animation: sound0 0.25s ease-in-out 36 alternate;
+}
+@keyframes sound0 {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+.sound1 {
+	animation-duration: 2s;
+	animation-name: alarm;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm {
+	0% {
+		background-color: #420C09;
+		transform: rotate(1deg);
+	}
+	5% {
+		transform: rotate(-1deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(1deg);
+	}
+	20% {
+		transform: rotate(-1deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+.sound2 {
+	animation-duration: 2s;
+	animation-name: alarm-2;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-2 {
+	0% {
+		background-color: #420C09;
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+.sound3 {
+	animation-duration: 2s;
+	animation-name: alarm-3;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-3 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.sound4 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep;
+	animation-timing-function: ease-out;
+}
+@keyframes peep {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #141414;
+	}
+}
+/* **********************************************
+The first paragraph, with extended timing for
+	all siblings. Basically what it does is that
+	it shows the text after a delay, which
+	corresponds with the time that the word is
+	spoken.
+You probably want to change the styling.
+********************************************** */
+.p0.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p1.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p2.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.p3.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p6.on span:first-of-type {
+	background-color: orange;
+	padding: 4px;
+	color: white;
+}
+.p7.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p8.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
