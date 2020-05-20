@@ -1,0 +1,670 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+#closed-captions p {
+	opacity: 0;
+	transition: .05s;
+	position: absolute;
+	margin-left: 263px;
+	margin-top: 20px;
+}
+#closed-captions .on {
+	opacity: 1;
+}
+#closed-captions .off {
+	transition: .2s;
+	opacity: 0;
+}
+#body {
+	background-color: #111111;
+}
+#video-placeholder {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	margin-top: 80px;
+	z-index: 2;
+}
+.voice1 {
+	font-family: "brenner mono";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.voice2 {
+	font-family: "brenner sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #C5C6D0;
+}
+.voice3 {
+	font-family: "brenner sans";
+	font-style: italic;
+	font-weight: 500;
+	font-size: 18px;
+	color: orange;
+}
+#wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1400px;
+	height: 800px;
+	transform: translateY(-1400px);
+	z-index: 1;
+}
+#fuck-off {
+	transform: scale(0.25);
+	opacity: 0;
+}
+.sound5 #fuck-off {
+	animation-name: fuck-off;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes fuck-off {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.sound0 #video-placeholder {
+	animation: sound0 0.25s ease-in-out 36 alternate;
+}
+@keyframes sound0 {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+#buzzer {
+	position: relative;
+	color: #E04D48;
+	font-family: "brenner sans";
+	font-style: normal;
+	font-size: 50px;
+	font-weight: 750;
+	transform: translate(50px , -450px);
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	letter-spacing: 20px;
+	opacity: 0;
+}
+.sound1 #buzzer {
+	animation: buzzer1;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+@keyframes buzzer1 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+#buzzer2 {
+	position: relative;
+	color: #E04D48;
+	font-family: "brenner sans";
+	font-style: normal;
+	font-size: 50px;
+	font-weight: 750;
+	transform: translate(1210px , -800px);
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	letter-spacing: 20px;
+	opacity: 0;
+}
+.sound1 #buzzer2 {
+	animation: buzzer2;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+@keyframes buzzer2 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound1 {
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-name: redbackground;
+	animation-timing-function: ease-out;
+}
+@keyframes redbackground {
+	0% {
+		background-color: #420C09;
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+.sound1 #video-placeholder {
+	animation-duration: 0.5s;
+	animation-iteration-count: 2;
+	animation-name: alarm-1;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-1 {
+	0% {
+		transform: rotate(1deg);
+	}
+	20% {
+		transform: rotate(-1deg);
+	}
+	40%{
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(1deg);
+	}
+	80% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+#alarm-image {
+	position: absolute;
+	top: -80px;
+	left: -340px;
+	transform: scale(0.1);
+	opacity: 0;
+}
+.sound2 #alarm-image {
+	animation-name: alarm-image;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-image {
+	0% {
+		opacity: 1;
+		transform: scale(0.1);
+	}
+	50% {
+		transform: scale(0.2)
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+}
+#alarm-image2 {
+	position: absolute;
+	top: -80px;
+	left: 850px;
+	transform: scale(0.1);
+	opacity: 0;
+}
+.sound2 #alarm-image2 {
+	animation-name: alarm-image2;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-image2 {
+	0% {
+		opacity: 1;
+		transform: scale(0.1);
+	}
+	50% {
+		transform: scale(0.2)
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.1);
+	}
+}
+.sound2 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-2;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-2 {
+	0% {
+		background-color: #420C09;
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+.sound3 #video-placeholder {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-3;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-3 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+#geluidsgolf1 {
+	transform: translate(-160px ,-1410px) scale(0.85);
+	opacity: 0;
+}
+#geluidsgolf2 {
+	transform: translate(578px, -2750px) scale(0.2);
+	opacity: 0;
+}
+.sound4 #geluidsgolf1 {
+	animation: golf1 .6s linear;
+}
+@keyframes golf1 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound4 #geluidsgolf2 {
+	animation: golf2 .6s linear .1s;
+}
+@keyframes golf2 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound4 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep;
+	animation-timing-function: ease-out;
+}
+@keyframes peep {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+.sound6 #video-placeholder {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-6;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-6 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.sound7 #geluidsgolf1 {
+	animation: golf3 .6s linear;
+}
+@keyframes golf3 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound7 #geluidsgolf2 {
+	animation: golf4 .6s linear .1s;
+}
+@keyframes golf4 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound7 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep-7;
+	animation-timing-function: ease-out;
+}
+@keyframes peep-7 {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+.sound8 #video-placeholder {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: alarm-8;
+	animation-timing-function: ease-out;
+}
+@keyframes alarm-8 {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+.sound9 #geluidsgolf1 {
+	animation: golf5 .6s linear;
+}
+@keyframes golf5 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound9 #geluidsgolf2 {
+	animation: golf6 .6s linear .1s;
+}
+@keyframes golf6 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sound9 {
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: peep-9;
+	animation-timing-function: ease-out;
+}
+@keyframes peep-9 {
+	0% {
+		background-color: #420C09;
+		transform: rotate(.5deg);
+	}
+	5% {
+		transform: rotate(-.5deg);
+	}
+	10%{
+		transform: rotate(0deg);
+	}
+	15% {
+		transform: rotate(.5deg);
+	}
+	20% {
+		transform: rotate(-.5deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+.sound10 {
+	animation-duration: 46s;
+	animation-iteration-count: 1;
+	animation-name: sound10;
+	animation-timing-function: linear;
+	transform-origin: top;
+}
+@keyframes sound10 {
+	0% {
+		transform: scale(1.0);
+		background-color: #111111;
+	}
+	94% {
+		transform: scale(1.1);
+	}
+	95% {
+		transform: scale(1.0)
+	}
+	100% {
+		background-color: #768169;
+	}
+}
+.sound10 #video-placeholder {
+	animation-name: sound10tril;
+	animation-duration: .2s;
+	animation-iteration-count: 155;
+	animation-timing-function: ease-in-out;
+	animation-delay: 10s;
+	animation-direction: alternate;
+	animation-fill-mode: initial;
+}
+@keyframes sound10tril {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+.sound11 {
+	animation-duration: 45s;
+	animation-iteration-count: 1;
+	animation-name: sound11;
+	animation-timing-function: linear;
+	transform-origin: top;
+}
+@keyframes sound11 {
+	0% {
+		transform: scale(1.0);
+	}
+	90% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1.0)
+	}
+}
+.sound11 #video-placeholder {
+	animation-name: sound11tril;
+	animation-duration: .15s;
+	animation-delay: -8s;
+	animation-iteration-count: 230;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+@keyframes sound11tril {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(5px);
+	}
+}
+.sound12 {
+	animation-name: dark;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes dark {
+	0% {
+		background-color: #111111;
+	}
+	10% {
+		background-color: black;
+	}
+	90% {
+		background-color: black;
+	}
+	100% {
+		background-color: #111111;
+	}
+}
+.sound13 #video-placeholder {
+	animation-name: sound13tril;
+	animation-duration: .2s;
+	animation-iteration-count: 109;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+@keyframes sound13tril {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(5px);
+	}
+}
+/* **********************************************
+The first paragraph, with extended timing for
+	all siblings. Basically what it does is that
+	it shows the text after a delay, which
+	corresponds with the time that the word is
+	spoken.
+You probably want to change the styling.
+********************************************** */
+.voice1.on span:first-of-type {
+	background-color: #E04D48;
+	padding: 4px;
+	color: white;
+}
+.voice2.on span:first-of-type {
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.voice3.on span:first-of-type {
+	background-color: orange;
+	padding: 4px;
+	color: white;
+}
+.p41 span {
+	opacity: 0;
+}
+.p41.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p41.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+}
+.p41.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+}
+.p41.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p42 span {
+	opacity: 0;
+}
+.p42.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p42.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+}
+.p42.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+}
+.p42.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+}
+.p43 span {
+	opacity: 0;
+}
+.p43.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	background-color: #20387A;
+	padding: 4px;
+	color: white;
+}
+.p43.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .2s;
+}
+.p43.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+}
+.p43.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .8s;
+}
