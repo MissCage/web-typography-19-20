@@ -50,4 +50,5 @@ Vasilis was tijdens dit tweede feedbackmoment over het algemeen positief. Ik was
 
 <h3>Bronnen</h3>
 https://raidboxes.io/nl/blog/webdesign-development/typographie-grundlagen-webfonts-tipps/<br>
-https://css-tricks.com/almanac/
+https://css-tricks.com/almanac/<br>
+https://exclusive-design.vasilis.nl/
