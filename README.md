@@ -47,3 +47,7 @@ Het tweede feedbackmoment heeft mij inzichten gegeven hoe ik de final touches ka
 Vasilis was tijdens dit tweede feedbackmoment over het algemeen positief. Ik was al goed bezig met experimenteren, maar dit kan misschien nog wel een stapje verder. Hier wil ik in de laatste week dus nog een slag in proberen te slaan. Ook gaf Vasilis aan dat het scherm niet per se responsive hoeft te zijn. Als ik nog tijd over heb, wil ik dit proberen. Maar ik leg hier niet de focus op. Tijdens het eerste feedbackmoment gaf Vasilis aan dat het niet per se nodig is om elk woord apart te laten verschijnen. Tijdens het tweede feedbackmoment gaf Vasilis aan dat ik het op deze manier beter had gedaan door het alleen toe te passen op het moment dat Officer K ‘within cells interlinked’ drie keer moet herhalen.
 
 <h3>Iteratie 3</h3>
+
+<h3>Bronnen</h3>
+https://raidboxes.io/nl/blog/webdesign-development/typographie-grundlagen-webfonts-tipps/<br>
+https://css-tricks.com/almanac/
