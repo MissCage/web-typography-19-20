@@ -9,13 +9,15 @@ Tijdens deze opdracht ontwerpen we voor één persoon: Darice. Het doel van deze
 Om succesvol te kunnen ontwerpen is het belangrijk om te kijken naar de identiteit van onder andere de persoon waarvoor je ontwerpt. Dit is één van de principes van de Exclusive Design Principles. Ook is het belangrijk dat je de situatie van dat persoon goed kunt schetsen. Wat houdt de handicap precies in? Wat voor gevolgen heeft het en waar moet ik rekening mee houden? 
 
 Tijdens de kennismaking met Darice heb ik voor mijzelf een aantal punten opgeschreven. Deze punten heb ik in gedachte gehouden tijdens het ontwerpen:
-•	In het dagelijks leven is het vooral moeilijk voor haar om gesprekken te volgen
-•	“De wereld is gebouwd voor mensen die geen beperking hebben”
-•	Haar stijl: minimalistisch, kleine kleuraccenten, whitespaces, genuanceerd en toegankelijk
-•	Captions het liefst in beeld maar let goed op contrast en leesbaarheid
-•	Fijn als je kunt zien wie er praat, gebruik verschillende kleuren
-•	Best practice: The Half Of It (Netflix)
-•	Worst practice: Late Night (Netflix)
+<ul>
+  <li>In het dagelijks leven is het vooral moeilijk voor haar om gesprekken te volgen</li>
+  <li>“De wereld is gebouwd voor mensen die geen beperking hebben”</li>
+  <li>Haar stijl: minimalistisch, kleine kleuraccenten, whitespaces, genuanceerd en toegankelijk</li>
+  <li>Captions het liefst in beeld maar let goed op contrast en leesbaarheid</li>
+  <li>Fijn als je kunt zien wie er praat, gebruik verschillende kleuren</li>
+  <li>Best practice: The Half Of It (Netflix)</li>
+  <li>Worst practice: Late Night (Netflix)</li>
+ </ul>
 
 De uitdaging bij deze opdracht is om zowel de identiteit van Darice mee te nemen, als die van mijzelf en de film. Ik wil graag een mooie balans vinden tussen de stijl van Darice (minimalistisch) en een experimenteel ontwerp. 
 
