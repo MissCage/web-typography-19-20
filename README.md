@@ -1,5 +1,7 @@
 <h1> Web-typografie | Bladerunner 2049 </h1>
 
+<em>Note: zie in mijn repository de gehele versies van deze opdracht.</em>
+
 <h3>Inleiding</h3>
 
 Tijdens deze opdracht ontwerpen we voor één persoon: Darice. Het doel van deze opdracht is om de scène uit de film Bladerunner 2049 interessanter te maken voor Darice die niet kan horen. Daarnaast is het doel om te gaan experimenteren met html/css. Wat werkt wel en wat werkt niet bij het visueel maken van geluiden?
