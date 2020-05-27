@@ -4,7 +4,7 @@
 
 <p>Eindversie: https://misscage.github.io/web-typography-19-20/Typografie-5.0/closed-captions/index.html</p>
 
-<h3>Identiteit en situatie</h3>
+<h3>Study situation & Prioritise identity</h3>
 <p>Om succesvol te kunnen ontwerpen is het belangrijk om te kijken naar de identiteit van onder andere de persoon waarvoor je ontwerpt. Dit is één van de principes van de Exclusive Design Principles. Ook is het belangrijk dat je de situatie van dat persoon goed kunt schetsen. Wat houdt de handicap precies in? Wat voor gevolgen heeft het en waar moet ik rekening mee houden?</p> 
 
 <p>Tijdens de kennismaking met Darice heb ik voor mijzelf een aantal punten opgeschreven. Deze punten heb ik in gedachte gehouden tijdens het ontwerpen:
@@ -21,6 +21,8 @@
 <p>De uitdaging bij deze opdracht is om zowel de identiteit van Darice mee te nemen, als die van mijzelf en de film. Ik wil graag een mooie balans vinden tussen de stijl van Darice (minimalistisch) en een experimenteel ontwerp.</p>
 
 <p>Een groot deel van de film Bladerunner 2049 heb ik gekeken en al snel had ik de sfeer te pakken. De film heeft een koele, sombere en duistere sfeer en mede door het geluid word je meegesleept. Het gaat onder andere over de grens tussen mens en machine die steeds vager wordt. Door middel van visuele aspecten wil ik proberen om deze sfeer mee te geven aan de film zonder het geluid nodig te hebben.</p>
+
+<p>Na de kennismaking met Darice en de film te hebben bekeken, heb ik een beeld kunnen vormen van de identiteit van zowel Darice en de film. Vanaf hier ben ik gaan ontwerpen. Omdat we twee keer feedback hebben gehad van Darice heeft zij een actieve rol gespeeld in het ontwerpproces.</p.
 
 <h3>Font</h3>
 <p>In eerste instantie wilde ik werken met een systeemfont. Dit omdat dit eigenlijk altijd goed leesbaar is om elk device. Daarnaast maakt het de pagina sneller omdat het lettertype niet via een server geladen hoeft te worden. Dit lettertype staat al op de computer of smartphone van de gebruiker.</p>
@@ -60,8 +62,16 @@
 
 <p>Bekijk hier te laatste versie: https://misscage.github.io/web-typography-19-20/Typografie-5.0/closed-captions/index.html</p>
 
+<h3>Ignore conventions</h3>
+<p>“De wereld is gebouwd voor mensen die geen beperking hebben” is wat Darice tegen mij zei tijdens de kennismaking. Dit kon ik eigenlijk gelijk koppelen aan één van de exclusive design principles: ignore conventions. Hierbij vraag je je af of de huidige conventies ook daadwerkelijk werken voor mensen met een beperking. Tijdens deze opdracht heb ik geprobeerd om dan ook geen rekening te houden met deze conventies, maar echt te kijken naar wat vindt Darice ervan en hoe wordt het voor háár leuker om deze film te kijken?</p>
+
+<h3>Add nonsense</h3>
+<p>De hele uitdaging van deze opdracht was om out of the box te denken. Dit heb ik dan ook geprobeerd, vooral in de latere iteraties omdat ik eerst bezig was met het bekend worden met HTML en CSS. Ik denk dat ik dan ook wel visuele aspecten heb toegevoed die ik normaal gesproken niet in eerste instantie bij de closed captions van een film zou bedenken. Zo heb ik bijvoorbeeld gebruik gemaakt van een alarmicoon, een 'heartbeat'-lijn en laat ik de video groter en kleiner worden wanneer dit bij de audio past. Het ene visuele aspect is meer nuttig dan het andere maar het voegt daarin wel 'nonsense' toe aan de opdracht.</p>
+
 <h3>Conclusie en reflectie</h3>
 <p>Over het algemeen ben ik heel tevreden met wat ik heb kunnen bereiken in een korte tijd zonder enige ervaring. Door heel veel op internet te zoeken en af en toe dingen te vragen aan andere studenten of aan Chelsea ben ik veel verder gekomen. Wat ik lastig vond, was de positionering van elementen en het responsive maken van mijn ontwerp. Ik heb gemerkt dat er heel veel manieren en 'regeltjes' zijn om elementen een positie te geven op het scherm. Het één werkt niet samen met het ander enzovoorts. Hier was ik soms veel tijd aan kwijt en zou ik in het vervolg ook meer over willen leren.</p>
+
+<p>Wanneer ik nog meer tijd had gehad voor deze opdracht zou ik uiteraard nog meer de focus hebben gelegd op scene 2. Nu heb ik mij gefocust op de eerste scene omdat ik deze zo goed mogelijk wilde uitwerken voordat ik aan de tweede scene begon. Verder had ik mij nog wel meer willen verdiepen in de overige effecten die CSS biedt zonder dat je bijvoorbeeld een SVG gebruikt.</p>
 
 <h3>Bronnen</h3>
 https://raidboxes.io/nl/blog/webdesign-development/typographie-grundlagen-webfonts-tipps/<br>
