@@ -22,7 +22,7 @@
 
 <p>Een groot deel van de film Bladerunner 2049 heb ik gekeken en al snel had ik de sfeer te pakken. De film heeft een koele, sombere en duistere sfeer en mede door het geluid word je meegesleept. Het gaat onder andere over de grens tussen mens en machine die steeds vager wordt. Door middel van visuele aspecten wil ik proberen om deze sfeer mee te geven aan de film zonder het geluid nodig te hebben.</p>
 
-<p>Na de kennismaking met Darice en de film te hebben bekeken, heb ik een beeld kunnen vormen van de identiteit van zowel Darice en de film. Vanaf hier ben ik gaan ontwerpen. Omdat we twee keer feedback hebben gehad van Darice heeft zij een actieve rol gespeeld in het ontwerpproces.</p.
+<p>Na de kennismaking met Darice en de film te hebben bekeken, heb ik een beeld kunnen vormen van de identiteit van zowel Darice en de film. Vanaf hier ben ik gaan ontwerpen. Omdat we twee keer feedback hebben gehad van Darice heeft zij een actieve rol gespeeld in het ontwerpproces.</p>
 
 <h3>Font</h3>
 <p>In eerste instantie wilde ik werken met een systeemfont. Dit omdat dit eigenlijk altijd goed leesbaar is om elk device. Daarnaast maakt het de pagina sneller omdat het lettertype niet via een server geladen hoeft te worden. Dit lettertype staat al op de computer of smartphone van de gebruiker.</p>
