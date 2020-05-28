@@ -24,7 +24,7 @@
 
 <p>Na de kennismaking met Darice en de film te hebben bekeken, heb ik een beeld kunnen vormen van de identiteit van zowel Darice en de film. Vanaf hier ben ik gaan ontwerpen. Omdat we twee keer feedback hebben gehad van Darice heeft zij een actieve rol gespeeld in het ontwerpproces.</p>
 
-<h3>Font</h3>
+<h3>Font & kleur</h3>
 <p>In eerste instantie wilde ik werken met een systeemfont. Dit omdat dit eigenlijk altijd goed leesbaar is om elk device. Daarnaast maakt het de pagina sneller omdat het lettertype niet via een server geladen hoeft te worden. Dit lettertype staat al op de computer of smartphone van de gebruiker.</p>
 
 <p>Later ben ik toch voor het Brenner font gegaan. Zeker wanneer je geen geluiden hoort, is typografie belangrijk voor de sfeer die de video meebrengt. Met het brenner font zijn er veel meer mogelijkheden om het karakter van een stem weer te geven ten opzichte van het systeemfont. Ik kwam er tijdens een gesprek met Darice achter dat zij het fijn vindt als er visueel onderscheid wordt gemaakt tussen de verschillende mensen die spreken. Zo gebruik ik uiteindelijk voor de ‘intercom’ stem een monotype variant van Brenner om de monotone stem van de intercom weer te geven. De “fuck-off skin job” maak ik cursief en oranje om de agressiviteit in zijn stem te laten zien. De letters houd ik klein omdat de man het niet schreeuwt. De voordelen van het brenner lettertype vond ik in dit geval zwaarder wegen dan die van een systeemfont.</p>
